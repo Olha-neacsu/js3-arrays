@@ -170,3 +170,51 @@
 // console.log(checkStorage(['apple', 'plum', 'pear'], 'carrot')); // Sorry! We are out of stock!
 
 //8-----------------------------------------------------------------
+/*
+ * SmileCare складає розклад прийомів на день — по одному слоту на годину.
+ * Функція getAppointmentSlots(openHour, closeHour) повертає масив слотів
+ * від години відкриття до години закриття включно.
+ * 1. Створи порожній масив slots.
+ * 2. У циклі for пройди по годинах від openHour до closeHour включно.
+ * 3. На кожній годині додай у slots рядок виду `9:00` методом push()
+ *    (використай шаблонний рядок).
+ * 4. Поверни масив slots.
+ */
+
+// Твій код тут
+
+// function getAppointmentSlots(openHour, closeHour) {
+//   const slots = [];
+//   for (let i = openHour; i <= closeHour; i += 1) {
+//     slots.push(`${i}:00`);
+//   }
+//   return slots;
+// }
+
+// console.log(getAppointmentSlots(9, 12)); // ['9:00', '10:00', '11:00', '12:00']
+// console.log(getAppointmentSlots(14, 16)); // ['14:00', '15:00', '16:00']
+
+//9-------------------------------------------------------------------
+/*
+ * Функція calculateTotalPrice(order) рахує загальну суму замовлення.
+ *   order — масив цін (числа).
+ * 1. Оголоси змінну total зі значенням 0.
+ * 2. Пройди масив order циклом for.
+ * 3. На кожному кроці додай поточну ціну до total.
+ * 4. Поверни total.
+ */
+
+// Твій код тут
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4])); // 138
+// console.log(calculateTotalPrice([164, 48, 291])); // 503
+
+//10--------------------------------------------------------------------
