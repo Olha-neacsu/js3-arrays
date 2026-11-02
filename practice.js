@@ -218,3 +218,65 @@
 // console.log(calculateTotalPrice([164, 48, 291])); // 503
 
 //10--------------------------------------------------------------------
+/*
+ * Функція getEvenNumbers(numbers) приймає масив чисел і повертає
+ * новий масив, що містить лише парні числа.
+ * Парне число ділиться на 2 без остачі (number % 2 === 0).
+ * 1. Оголоси порожній масив evenNumbers.
+ * 2. Пройди масив numbers циклом for.
+ * 3. Якщо поточне число парне — додай його в evenNumbers методом push().
+ * 4. Поверни evenNumbers.
+ */
+
+// Твій код тут
+
+// function getEvenNumbers(numbers) {
+//   const evenNumbers = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       evenNumbers.push(numbers[i]);
+//     }
+//   }
+//   return evenNumbers;
+// }
+
+// console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
+// console.log(getEvenNumbers([7, 10, 13, 20])); // [10, 20]
+// console.log(getEvenNumbers([1, 3, 5])); // []
+
+//11------------------------------------------------------------------
+/*
+ * Спільні елементи двох списків — це позиції, що є в обох.
+ * Кав'ярня перевіряє, які напої зі списку бажань клієнта є в наявності.
+ * Функція getCommonItems(wishlist, stock) повертає напої, що є в обох списках.
+ * 1. Оголоси порожній масив commonItems.
+ * 2. Пройди список wishlist циклом for.
+ * 3. Якщо поточний напій є в stock (метод includes) — додай його
+ *    в commonItems методом push.
+ * 4. Поверни commonItems.
+ */
+
+// Твій код тут
+
+// function getCommonItems(wishlist, stock) {
+//   const commonItems = [];
+//   for (let i = 0; i < wishlist.length; i += 1) {
+//     if (stock.includes(wishlist[i])) {
+//       commonItems.push(wishlist[i]);
+//     }
+//   }
+//   return commonItems;
+// }
+
+// console.log(
+//   getCommonItems(
+//     ['Latte', 'Matcha', 'Espresso', 'Raf'],
+//     ['Espresso', 'Americano', 'Latte'],
+//   ),
+// ); // ['Latte', 'Espresso']
+// console.log(
+//   getCommonItems(['Cappuccino', 'Latte'], ['Latte', 'Mocha', 'Cappuccino']),
+// ); // ['Cappuccino', 'Latte']
+// console.log(getCommonItems(['Green', 'Black'], ['Herbal', 'Matcha'])); // []
+
+//12-----------------------------------------------------------------
